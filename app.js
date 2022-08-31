@@ -23,6 +23,24 @@ app.post('/users', db.createUsers)
 app.put('/users/:id', db.updateUserDegree)
 app.delete('/users/:id', db.deleteUser)
 
+app.get('/department', db.getDepartments)
+app.get('/department/:id', db.getDepartmentsById)
+app.post('/department', db.createDepartments)
+app.put('/department/:id', db.updateDepartmentLeader)
+app.delete('/department/:id', db.deleteDepartment)
+
+app.get('/location', db.getLocation)
+app.get('/location/:id', db.getLocationById)
+app.post('/location', db.createLocation)
+app.put('/location/:id', db.updateLocationAdress)
+app.delete('/location/:id', db.deleteLocation)
+
+app.get('/degree', db.getDegree)
+app.get('/degree/:id', db.getDegreeById)
+app.post('/degree',db.createDegree)
+app.put('/degree/:id',db.updateDegreeDate)
+app.delete('/degree/:id',db.deleteDegree)
+
 const port = 8000
 app.listen(port, () => {
   console.log(`App started on port ${port}`)
