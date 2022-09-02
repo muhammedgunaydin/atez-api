@@ -6,7 +6,7 @@ const db = require('./db/pg-conn')
 
 app.use(express.json())
 app.use(bodyParser.json())
-app.use(
+app.use( 
   bodyParser.urlencoded({
     extended: true,
   })
